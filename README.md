@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://github.com/HillaryWebb-coder/advice-generator)
 - Live Site URL: [Add live site URL here](https://hillary-advice-generator.netlify.app/)
 
 ## My process
@@ -45,63 +45,71 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- Vanilla JS
+- Fetch API
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+I was able to learn how to absolutely position an element while keeping it in the center using flex while trying to create the pause icon with svg
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<div class="pause">
+  <svg
+    width="295"
+    height="16"
+    xmlns="http://www.w3.org/2000/svg"
+    class="mobile-divider"
+  >
+    <g fill="none" fill-rule="evenodd">
+      <path fill="#4F5D74" d="M0 8h122v1H0zM173 8h122v1H173z" />
+      <g transform="translate(138)" fill="#CEE3E9">
+        <rect width="6" height="16" rx="3" />
+        <rect x="14" width="6" height="16" rx="3" />
+      </g>
+    </g>
+  </svg>
+  <svg
+    width="444"
+    height="16"
+    xmlns="http://www.w3.org/2000/svg"
+    class="desktop-divider"
+  >
+    <g fill="none" fill-rule="evenodd">
+      <path fill="#4F5D74" d="M0 8h196v1H0zM248 8h196v1H248z" />
+      <g transform="translate(212)" fill="#CEE3E9">
+        <rect width="6" height="16" rx="3" />
+        <rect x="14" width="6" height="16" rx="3" />
+      </g>
+    </g>
+  </svg>
+  <div class="pause-icon">
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </div>
+</div>
 ```
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.pause {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 ```
 
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
+```css
+.pause-icon {
+  display: flex;
+  gap: 8px;
+  background-color: hsl(217, 19%, 38%);
+  position: absolute;
+  padding: 16px;
+}
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Website - [Ogieleguea Hillary](https://github.com/hillarywebb-coder)
+- Frontend Mentor - [@HillaryWebb-coder](https://www.frontendmentor.io/profile/HillaryWebb-coder)
+- Twitter - [@OgielegueaH](https://www.twitter.com/OgielegueaH)
